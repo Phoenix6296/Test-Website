@@ -1,10 +1,14 @@
+import { Box } from '@mui/material';
 import './App.css';
+import MediaCard from './Components/Cards/MediaCard';
 
 function App() {
   return (
-    <div className="app">
-      <h1>Krishna</h1>
-    </div>
+    <Box sx={{ display: 'flex', flexDirection: 'row', gap: '1rem', flexWrap: 'wrap' }}>
+      <MediaCard />
+      <MediaCard />
+      <MediaCard />
+    </Box >
   );
 }
 
