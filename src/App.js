@@ -1,13 +1,12 @@
-import { Box } from '@mui/material';
-import MediaCard from './Components/Cards/MediaCard';
+import Home from './Components/Home/Home';
+import './App.css';
+
 
 function App() {
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'row', gap: '1rem', flexWrap: 'wrap' }}>
-      {[1, 2, 3, 4, 5].map(card => (
-        <MediaCard key={card} />
-      ))}
-    </Box>
+    <div className="app">
+      <Home />
+    </div>
   );
 }
 
