@@ -2,6 +2,7 @@ import MediaCard from "../Cards/MediaCard";
 import { Box } from "@mui/material";
 import axios from "axios";
 import { useState, useEffect } from "react";
+
 const Home = () => {
   const [image, setImage] = useState([]);
   const [page, setPage] = useState(1);
@@ -49,10 +50,6 @@ const Home = () => {
         flexDirection: "row",
         gap: "1rem",
         flexWrap: "wrap",
-        //Hide the scroll bar on media query of 600px
-        "&::-webkit-scrollbar": {
-          display: "none",
-        },
       }}
     >
       {image.length > 0 &&
