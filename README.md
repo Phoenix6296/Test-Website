@@ -3,7 +3,7 @@
 ### `npm install` to install all the dependencies.
 ### `npm start` to run the app in the development mode.
 
-## Deployed Website Link: https://infinitescrollapp.vercel.app/
+## Deployed Website : <a href = "https://infinitescrollapp.vercel.app/" target="_blank" rel="noopener noreferrer"> LINK </a>
 
 
 ## Features of this project.
