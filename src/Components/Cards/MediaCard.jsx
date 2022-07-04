@@ -7,26 +7,43 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Breadcrumbs, Link } from "@mui/material";
 
-export default function MediaCard(props) {
+//This is the card of the Material UI with some props added.
+export default function MediaCard({
+  image,
+  title,
+  description,
+  link1,
+  link2,
+  ad,
+  cat,
+  date,
+}) {
   return (
-    <Card sx={{ maxWidth: 400 }}>
-      <CardMedia component="img" height="300" image={props.image} alt="Image" />
+    <Card
+      sx={{
+        width: 400,
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-around",
+      }}
+    >
+      <CardMedia component="img" height="300" image={image} alt="Image" />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          {props.title}
+          {title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {props.description}
+          {description}
         </Typography>
         <Breadcrumbs aria-label="breadcrumb">
           <p>by</p>
-          <Link underline="hover" color="orange" href={props.link1}>
-            {props.ad}
+          <Link underline="hover" color="orange" href={link1}>
+            {ad}
           </Link>
-          <Link underline="hover" color="orange" href={props.link2}>
-            {props.cat}
+          <Link underline="hover" color="orange" href={link2}>
+            {cat}
           </Link>
-          <Typography color="text.primary">{props.date}</Typography>
+          <Typography color="text.primary">{date}</Typography>
         </Breadcrumbs>
       </CardContent>
       <CardActions>
